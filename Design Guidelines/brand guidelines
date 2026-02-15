@@ -1,0 +1,21 @@
+Colors
+Primary:#FFF083
+Accent:#FA5D29
+Background:#F8F8F8
+Text Primary:#222222
+Link:#FA5D29
+Fonts
+Inter Tight(body)
+Typography
+primary: Inter Tight
+heading: Inter Tight
+h1: 170px
+h2: 14px
+body: 20px
+Spacing
+Base Unit:4
+Border Radius:8px
+Personality
+Tone: modern
+Energy: medium
+Audience: design professionals
