@@ -1,16 +1,45 @@
-# React + Vite
+# B.L.A.S.T. Dashboard (AI News Aggregator)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, high-performance AI news dashboard built with React, Vite, and Python. Features a real-time scraping engine and a premium dynamic background powered by Three.js shaders.
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Frontend**: React 19, Vite, TypeScript
+- **Styling**: Tailwind CSS v4
+- **Graphics**: Three.js (React Three Fiber/Drei)
+- **Scraper**: Python (Requests, BeautifulSoup, Datetime)
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Multi-Source Scraping**: Aggregates AI news from Reddit, Ben's Bites, and The Rundown AI.
+- **Premium UI**: Dynamic "Dot-Shader" background with reactive mouse trail effects.
+- **Save System**: Persistently save articles to your local collection.
+- **Stats Overview**: Real-time article and saved count indicators.
+- **Smart Filtering**: Automatic filtering to ensure articles have high-quality images.
 
-## Expanding the ESLint configuration
+## 🛠️ Setup
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Frontend (Dashboard)
+1. Navigate to the `dashboard` directory.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+### Scraper (Tools)
+1. Navigate to the `tools` directory.
+2. Run the aggregator:
+   ```bash
+   python aggregator.py
+   ```
+   *Note: This will fetch the latest news and update `dashboard/public/articles.json`.*
+
+## 📄 Repository Structure
+
+- `/dashboard`: React frontend source code.
+- `/tools`: Python scraping scripts.
+- `/Design Guidelines`: Project assets and brand information.
