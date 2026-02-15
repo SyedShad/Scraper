@@ -2,12 +2,12 @@
 
 A modern, high-performance AI news dashboard built with React, Vite, and Python. Features a real-time scraping engine and a premium dynamic background powered by Three.js shaders.
 
-## 🚀 Tech Stack
+## 🚀 Deployment
 
-- **Frontend**: React 19, Vite, TypeScript
-- **Styling**: Tailwind CSS v4
-- **Graphics**: Three.js (React Three Fiber/Drei)
-- **Scraper**: Python (Requests, BeautifulSoup, Datetime)
+This repository is optimized for **Vercel** and **Netlify**. Since the configuration files are in the root directory, you can simply import this repository and it will deploy automatically.
+
+- **Vercel**: Just link your GitHub repo.
+- **Netlify**: Just link your GitHub repo.
 
 ## ✨ Features
 
@@ -15,31 +15,30 @@ A modern, high-performance AI news dashboard built with React, Vite, and Python.
 - **Premium UI**: Dynamic "Dot-Shader" background with reactive mouse trail effects.
 - **Save System**: Persistently save articles to your local collection.
 - **Stats Overview**: Real-time article and saved count indicators.
-- **Smart Filtering**: Automatic filtering to ensure articles have high-quality images.
 
-## 🛠️ Setup
+## 🛠️ Local Development
 
-### Frontend (Dashboard)
-1. Navigate to the `dashboard` directory.
-2. Install dependencies:
+### Dashboard (Frontend)
+1. Install dependencies:
    ```bash
    npm install
    ```
-3. Run the development server:
+2. Run the development server:
    ```bash
    npm run dev
    ```
 
-### Scraper (Tools)
+### Scraper (Backend Tools)
 1. Navigate to the `tools` directory.
-2. Run the aggregator:
+2. Run the aggregator to update `public/articles.json`:
    ```bash
-   python aggregator.py
+   python tools/aggregator.py
    ```
-   *Note: This will fetch the latest news and update `dashboard/public/articles.json`.*
 
 ## 📄 Repository Structure
 
-- `/dashboard`: React frontend source code.
+- `/src`: React frontend source code.
+- `/public`: Static assets (including the scraped `articles.json`).
 - `/tools`: Python scraping scripts.
-- `/Design Guidelines`: Project assets and brand information.
+- `package.json`: Main project configuration.
+- `vite.config.ts`: Vite build configuration.

@@ -33,8 +33,8 @@ def main():
     # Sort by published_at (newest first)
     final_list.sort(key=lambda x: x['published_at'], reverse=True)
     
-    # Save directly to dashboard public directory
-    output_path = "dashboard/public/articles.json"
+    # Save directly to public directory
+    output_path = "public/articles.json"
     with open(output_path, "w") as f:
         json.dump(final_list, f, indent=2)
         
